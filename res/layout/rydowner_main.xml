@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rydOwner.RydOwnerActivity" >
+
+    <com.sym.bemyryd.locationUtils.CustomAutoCompleteTextView
+        android:id="@+id/num_Passengers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/atv_places_dst"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="@string/num_passangers"
+        android:inputType="number"
+        android:scrollHorizontally="false" />
+
+    <com.sym.bemyryd.locationUtils.CustomAutoCompleteTextView
+        android:id="@+id/atv_places_dst"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/atv_places_src"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/dst_atv_places"
+        android:inputType="textPostalAddress"
+        android:scrollHorizontally="false" >
+
+        <requestFocus />
+    </com.sym.bemyryd.locationUtils.CustomAutoCompleteTextView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/num_Passengers"
+        android:layout_marginTop="22dp"
+        android:text="@string/give_ride" />
+
+    <com.sym.bemyryd.locationUtils.CustomAutoCompleteTextView
+        android:id="@+id/atv_places_src"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="@string/src_atv_places"
+        android:inputType="textPostalAddress" />
+
+</RelativeLayout>
